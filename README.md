@@ -2,7 +2,7 @@
 
 💻 Young Developer | Aspiring Entrepreneur
 
-I'm a young developer from Azerbaijan interested in building useful digital products and exploring new technologies.
+I'm a young developer passionate about building useful digital products, exploring artificial intelligence, and creating innovative technology.
 
 ### 🚀 What I'm Building
 
@@ -24,4 +24,3 @@ I'm a young developer from Azerbaijan interested in building useful digital prod
 ---
 
 *Learning, building, and improving every day.*
-
