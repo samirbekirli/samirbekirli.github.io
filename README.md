@@ -1,26 +1,27 @@
 # Hi, I'm Samir Bekirli 👋
 
-💻 Young Developer | Aspiring Entrepreneur
+💻 Developer | Founder of Mitfly | Creator of WidGefter
 
-I'm a young developer passionate about building useful digital products, exploring artificial intelligence, and creating innovative technology.
+I'm a developer passionate about building useful digital products, exploring artificial intelligence, and creating innovative technology.
 
-### 🚀 What I'm Building
+## 🚀 What I'm Building
 
-* ✈️ **Mitfly** — A flight search and comparison platform designed to make travel planning easier.
-* 🧠 **AI & SaaS** — Exploring artificial intelligence and software-as-a-service products.
-* 🌐 **Widgefter** — My online identity and content brand.
+- ✈️ **Mitfly**: A flight search and comparison platform designed to make travel planning easier.
+- 🧠 **AI & SaaS**: Exploring artificial intelligence and software-as-a-service products.
+- 🎬 **WidGefter**: My YouTube channel about entrepreneurship, startups, and SaaS development.
 
-### 🛠️ Interests
+## 🛠️ Interests
 
-* Software Development
-* Artificial Intelligence
-* Web Applications
-* SaaS & Startups
+- Software Development
+- Artificial Intelligence
+- Web Applications
+- SaaS & Startups
 
-### 🔗 Connect With Me
+## 🔗 Connect With Me
 
-* 💼 [LinkedIn](https://www.linkedin.com/in/samir-bekirli-079959445/)
-
----
+- 🌐 [Website](https://samirbekirli.github.io)
+- 🎥 [YouTube: WidGefter](https://www.youtube.com/@WidGefter)
+- 💼 [LinkedIn](https://www.linkedin.com/in/samirbekirli)
+- 𝕏 [@WidGefter](https://x.com/WidGefter)
 
 *Learning, building, and improving every day.*
