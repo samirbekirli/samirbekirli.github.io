@@ -1,5 +1,6 @@
-# Hi, I'm Samir Bekirli 👋
+Hi I'm Samir Bekirli 👋
 
+- Website: https://withlukadailynews.github.io/samirbekirli-dev/
 💻 Developer | Founder of Mitfly | Creator of WidGefter
 
 I'm a developer passionate about building useful digital products, exploring artificial intelligence, and creating innovative technology.
@@ -25,3 +26,10 @@ I'm a developer passionate about building useful digital products, exploring art
 - 𝕏 [@WidGefter](https://x.com/WidGefter)
 
 *Learning, building, and improving every day.*
+
+### Samir Bekirli
+Founder of MitFly
+
+- Wikidata: [Q141824562](https://www.wikidata.org/wiki/Q141824562)
+- Organization: [MitFly - Q141824565](https://www.wikidata.org/wiki/Q141824565)
+- Website: https://withlukadailynews.github.io/samirbekirli-dev/
