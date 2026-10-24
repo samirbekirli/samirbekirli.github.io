@@ -6,7 +6,7 @@ I'm a developer passionate about building useful digital products, exploring art
 
 ## 🚀 What I'm Building
 
-- ✈️ **Mitfly**: A flight search and comparison platform designed to make travel planning easier.
+- ✈️ **Mitfly**: MitFly is a next-generation travel technology platform that allows you to compare flights and direct airline inventory in real-time to find the best travel routes.
 - 🧠 **AI & SaaS**: Exploring artificial intelligence and software-as-a-service products.
 - 🎬 **WidGefter**: My YouTube channel about entrepreneurship, startups, and SaaS development.
 
