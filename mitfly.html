@@ -1,79 +1,92 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mitfly | Flight Search and Comparison Platform by Samir Bekirli</title>
-  <meta name="description" content="Mitfly is a flight search and comparison platform built to make travel planning easier. Founded and developed by Samir Bekirli.">
-  <link rel="canonical" href="https://samirbekirli.github.io/mitfly.html">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Mitfly | Flight Search and Comparison Platform">
-  <meta property="og:description" content="Mitfly is a flight search and comparison platform built to make travel planning easier. Founded by Samir Bekirli.">
-  <meta property="og:url" content="https://samirbekirli.github.io/mitfly.html">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Mitfly",
-    "url": "https://samirbekirli.github.io/mitfly.html",
-    "description": "Mitfly is a flight search and comparison platform designed to make travel planning easier.",
-    "founder": {
-      "@type": "Person",
-      "name": "Samir Bekirli",
-      "url": "https://samirbekirli.github.io/"
-    }
-  }
-  </script>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 760px;
-      margin: 80px auto;
-      padding: 24px;
-      line-height: 1.7;
-      background: #101010;
-      color: #f5f5f5;
-    }
-    h1 { font-size: 42px; }
-    a { color: #79b8ff; }
-    .card {
-      padding: 20px;
-      margin-top: 24px;
-      border: 1px solid #333;
-      border-radius: 12px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mitfly | Flight Search and Comparison Platform by Samir Bekirli</title>
+<meta name="description" content="Mitfly is a flight search and comparison platform built to make travel planning easier. Founded and developed by Samir Bekirli. Launch expected in 2027.">
+<link rel="canonical" href="https://samirbekirli.github.io/mitfly.html">
+<link rel="icon" href="https://res.cloudinary.com/xmt3m95n/image/upload/v1792836889/5395400624217725872_119-removebg-preview_1.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mitfly | Flight Search and Comparison Platform">
+<meta property="og:description" content="Mitfly is a flight search and comparison platform built to make travel planning easier. Founded by Samir Bekirli.">
+<meta property="og:url" content="https://samirbekirli.github.io/mitfly.html">
+<meta property="og:image" content="https://res.cloudinary.com/xmt3m95n/image/upload/v1792837232/bca32392-8103-4829-8911-ddb8795a5445.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Mitfly","url":"https://getmitfly.github.io/","logo":"https://res.cloudinary.com/xmt3m95n/image/upload/v1792836889/5395400624217725872_119-removebg-preview_1.png","description":"Mitfly is a flight search and comparison platform designed to make travel planning easier.","founder":{"@type":"Person","name":"Samir Bekirli","url":"https://samirbekirli.github.io/"}}
+</script>
+<style>
+:root{--bg:#fff;--soft:#f6f7f9;--text:#0b0b0f;--muted:#5b6470;--line:#e5e7eb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;text-decoration:none}
+.brand img{height:48px;width:auto}
+nav{display:flex;gap:26px}nav a{text-decoration:none;color:var(--muted);font-size:15px}nav a:hover{color:var(--text)}
+.hero{padding:72px 0 48px}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.badge{display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--muted);background:var(--soft)}
+h1{font-size:clamp(38px,6vw,60px);line-height:1.08;margin:18px 0 16px;letter-spacing:-.02em}
+.lead{font-size:20px;color:var(--muted);margin:0 0 28px;max-width:560px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border-radius:12px;font-weight:600;text-decoration:none;border:1px solid var(--text)}
+.btn.dark{background:var(--text);color:#fff}
+.avatar{width:min(260px,100%);aspect-ratio:1;border-radius:50%;object-fit:cover;margin:0 auto;border:1px solid var(--line);box-shadow:0 20px 50px rgba(0,0,0,.10)}
+.plain img{width:100%;max-height:440px;object-fit:contain;margin:0 auto}
+section{padding:64px 0}.alt{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,38px);line-height:1.15;margin:0 0 10px;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:18px;max-width:640px;margin:0 0 32px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.card .pad{padding:24px}.card h3{margin:0 0 6px;font-size:21px}.card p{margin:0 0 14px;color:var(--muted)}
+.shot{border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 14px 36px rgba(0,0,0,.08);background:var(--soft)}
+.tag{display:inline-block;padding:3px 12px;border-radius:999px;background:var(--soft);border:1px solid var(--line);font-size:13px;color:var(--muted);margin-bottom:12px}
+.links{display:flex;flex-wrap:wrap;gap:10px}.links a{padding:8px 16px;border:1px solid var(--line);border-radius:999px;font-size:15px;text-decoration:none;background:#fff}.links a:hover{background:var(--soft)}
+.list a{display:block;padding:18px 22px;margin-bottom:12px;border:1px solid var(--line);border-radius:14px;text-decoration:none;background:#fff}
+.list a:hover{background:var(--soft)}.list small{display:block;color:var(--muted)}
+footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media(max-width:820px){.hero{padding:40px 0 28px}.grid,.two{grid-template-columns:1fr}.grid>.avatar,.grid>.plain{order:-1}.avatar{width:160px;margin:0}nav a:not(:last-child){display:none}section{padding:48px 0}}
+</style>
 </head>
 <body>
-  <h1>Mitfly ✈️</h1>
-  <p>A flight search and comparison platform designed to make travel planning easier.</p>
-
-  <div class="card">
-    <h2>What Mitfly is</h2>
-    <p>Mitfly helps travelers search for flights and compare their options in one place, so planning a trip takes less time and fewer open tabs.</p>
+<header><div class="wrap bar">
+ <a class="brand" href="https://getmitfly.github.io/"><img src="https://res.cloudinary.com/xmt3m95n/image/upload/v1792836889/5395400624217725872_119-removebg-preview_1.png" alt="Mitfly logo"><span>Mitfly</span></a>
+ <nav><a href="#about">About</a><a href="#preview">Preview</a><a href="index.html">Samir Bekirli</a></nav>
+</div></header>
+<main>
+ <div class="wrap hero"><div class="grid">
+  <div>
+   <span class="badge">Launch expected in 2027</span>
+   <h1>Mitfly</h1>
+   <p class="lead">A flight search and comparison platform designed to make travel planning easier.</p>
+   <div class="btns"><a class="btn dark" href="https://getmitfly.github.io/">Official website</a><a class="btn" href="index.html">Meet the founder</a></div>
   </div>
+  <div class="plain"><img src="https://res.cloudinary.com/xmt3m95n/image/upload/v1792837286/836cdb6f-8cd6-4408-9529-307548dadb4f-removebg-preview.png" alt="Mitfly"></div>
+ </div></div>
 
-  <div class="card">
-    <h2>Status</h2>
-    <p>Mitfly is currently in development. Updates are shared on the WidGefter YouTube channel and on this site.</p>
-  </div>
+ <section id="about" class="alt"><div class="wrap">
+  <h2>What is Mitfly?</h2>
+  <p class="sub">Mitfly helps travelers search for flights and compare their options in one place, so planning a trip takes less time and fewer open tabs.</p>
+  <p class="sub">Mitfly is currently in development and is expected to launch in 2027.</p>
+ </div></section>
 
-  <div class="card">
-    <h2>Who is behind it</h2>
-    <p>Mitfly is founded and built by <a href="https://samirbekirli.github.io/">Samir Bekirli</a>, a developer who also runs the <a href="https://www.youtube.com/@WidGefter">WidGefter</a> YouTube channel about entrepreneurship, startups, and SaaS development.</p>
+ <section id="preview"><div class="wrap">
+  <h2>A first look</h2>
+  <p class="sub">A glimpse of what is being built.</p>
+  <div class="two">
+   <div class="shot"><img loading="lazy" src="https://res.cloudinary.com/xmt3m95n/image/upload/v1792837232/bca32392-8103-4829-8911-ddb8795a5445.jpg" alt="Mitfly preview"></div>
+   <div class="shot"><img loading="lazy" src="https://res.cloudinary.com/xmt3m95n/image/upload/v1792835289/56630206-e17b-45ed-a9a2-b309614fd986.jpg" alt="Mitfly preview"></div>
   </div>
+ </div></section>
 
-  <div class="card">
-    <h2>Follow along</h2>
-    <p><a href="https://www.youtube.com/@WidGefter">YouTube: WidGefter</a></p>
-    <p><a href="https://x.com/WidGefter">X: @WidGefter</a></p>
-    <p><a href="https://github.com/samirbekirli">GitHub: samirbekirli</a></p>
-    <p><a href="https://www.linkedin.com/in/samirbekirli">LinkedIn: Samir Bekirli</a></p>
-    <p><a href="https://samirbekirli.github.io/">Back to samirbekirli.github.io</a></p>
-  </div>
+ <section class="alt"><div class="wrap">
+  <h2>Founder</h2>
+  <p class="sub">Mitfly is founded and built by <a href="index.html">Samir Bekirli</a>, a developer who also runs the <a href="https://www.youtube.com/@WidGefter">WidGefter</a> YouTube channel.</p>
+  <div class="links"><a href="https://getmitfly.github.io/">getmitfly.github.io</a><a href="https://github.com/samirbekirli">GitHub</a><a href="https://www.linkedin.com/in/samirbekirli">LinkedIn</a></div>
+ </div></section>
+</main>
+<footer><div class="wrap">© 2026 Mitfly · Founded by Samir Bekirli</div></footer>
 </body>
 </html>
