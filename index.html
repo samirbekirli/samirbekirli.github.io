@@ -42,8 +42,8 @@
   --bg-deep: #04060a;
   --card-bg: rgba(14, 18, 27, 0.72);
   --card-hover: rgba(20, 26, 40, 0.85);
-  --card-border: rgba(255, 255, 255, 0.08);
-  --card-border-hover: rgba(255, 255, 255, 0.22);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --card-border-hover: rgba(56, 189, 248, 0.4);
   --section-alt: rgba(255, 255, 255, 0.015);
   --text: #f8fafc;
   --text-muted: #94a3b8;
@@ -99,7 +99,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: rgba(4, 6, 10, 0.68);
+  background: rgba(4, 6, 10, 0.72);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   pointer-events: none;
@@ -110,7 +110,7 @@ a {
   transition: all 0.2s ease;
 }
 
-img {
+img, video {
   max-width: 100%;
   height: auto;
   display: block;
@@ -127,7 +127,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(4, 6, 10, 0.8);
+  background: rgba(4, 6, 10, 0.85);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
@@ -183,34 +183,10 @@ nav a:hover {
   align-items: center;
 }
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 999px;
-  font-size: 13.5px;
-  font-weight: 500;
-  color: #cbd5e1;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(8px);
-}
-
-.badge::before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #10b981;
-  box-shadow: 0 0 10px #10b981;
-}
-
 h1 {
   font-size: clamp(40px, 6vw, 62px);
   line-height: 1.08;
-  margin: 20px 0 16px;
+  margin: 0 0 16px;
   letter-spacing: -0.025em;
   font-weight: 800;
   background: linear-gradient(180deg, #ffffff 40%, #cbd5e1 100%);
@@ -326,86 +302,111 @@ h2 {
   gap: 28px;
 }
 
-/* Cards */
+/* Full Bleed Image / Video Cards */
 .card {
-  background: var(--card-bg);
+  position: relative;
+  background: #090c14;
   border: 1px solid var(--card-border);
-  border-radius: 20px;
+  border-radius: 22px;
   overflow: hidden;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.65);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+  min-height: 460px;
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.8);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.35s ease;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   border-color: var(--card-border-hover);
-  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.8), 0 0 25px rgba(56, 189, 248, 0.08);
+  box-shadow: 0 28px 60px -12px rgba(0, 0, 0, 0.9), 0 0 35px rgba(56, 189, 248, 0.18);
 }
 
-.card img {
+.card-bg-media {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 230px;
+  height: 100%;
   object-fit: cover;
-  border-bottom: 1px solid var(--line);
-  transition: transform 0.4s ease;
+  z-index: 1;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card:hover img {
-  transform: scale(1.02);
+.card:hover .card-bg-media {
+  transform: scale(1.04);
 }
 
-.card .pad {
-  padding: 26px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    180deg, 
+    rgba(4, 6, 10, 0.25) 0%, 
+    rgba(4, 6, 10, 0.5) 35%, 
+    rgba(4, 6, 10, 0.88) 70%, 
+    #04060a 100%
+  );
+  pointer-events: none;
 }
 
-.card h3 {
+.card-top {
+  position: relative;
+  z-index: 3;
+  padding: 24px;
+}
+
+.card-bottom {
+  position: relative;
+  z-index: 3;
+  padding: 28px 24px 26px;
+  margin-top: auto;
+}
+
+.card-bottom h3 {
   margin: 0 0 8px;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
   color: #ffffff;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-.card p {
+.card-bottom p {
   margin: 0 0 20px;
-  color: var(--text-muted);
+  color: #cbd5e1;
   font-size: 15.5px;
   line-height: 1.6;
-  flex-grow: 1;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
 }
 
 .tag {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 4px 12px;
+  padding: 5px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.09);
   font-size: 12.5px;
-  font-weight: 500;
-  color: #94a3b8;
-  margin-bottom: 14px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   width: fit-content;
 }
 
 .tag.launch {
   color: #34d399;
-  background: rgba(16, 185, 129, 0.08);
-  border-color: rgba(16, 185, 129, 0.2);
+  background: rgba(16, 185, 129, 0.18);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .tag.youtube {
-  color: #f87171;
-  background: rgba(239, 68, 68, 0.08);
-  border-color: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .links {
@@ -415,25 +416,28 @@ h2 {
 }
 
 .links a {
-  padding: 9px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 10px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 999px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.03);
-  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
 .links a:hover {
-  background: rgba(255, 255, 255, 0.09);
-  border-color: rgba(255, 255, 255, 0.24);
-  color: #ffffff;
-  transform: translateY(-1px);
+  background: #ffffff;
+  color: #04060a;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
 }
 
 /* Q&A Accordion with Typewriter Text */
@@ -613,6 +617,9 @@ footer {
   section {
     padding: 52px 0;
   }
+  .card {
+    min-height: 420px;
+  }
   .team-box {
     flex-direction: column;
     align-items: stretch;
@@ -648,7 +655,6 @@ footer {
   <div class="wrap hero">
     <div class="grid">
       <div>
-        <span class="badge">Developer &amp; Founder</span>
         <h1>Hi, I’m Samir Bekirli.</h1>
         <p class="lead">I build web applications and AI-powered products. I’m the founder of Mitfly and the creator of WidGefter, a YouTube channel about entrepreneurship, startups, and SaaS development.</p>
         <div class="btns">
@@ -665,11 +671,25 @@ footer {
       <h2>Projects</h2>
       <p class="sub">What I’m working on right now.</p>
       <div class="two">
-        <!-- Mitfly Card (Without Project Page button as requested) -->
-        <div class="card">
-          <img src="https://res.cloudinary.com/xmt3m95n/image/upload/v1792834295/5395400624217725363_119.jpg" alt="Mitfly flight search platform preview">
-          <div class="pad">
+        <!-- Mitfly Card: Hover to Play Video (Resumes from where it left off) -->
+        <div class="card" id="mitfly-card">
+          <video 
+            id="mitfly-video" 
+            class="card-bg-media" 
+            src="https://res.cloudinary.com/ltltiopj/video/upload/v1792931513/gemini_generated_video_984d7209.mp4" 
+            poster="https://res.cloudinary.com/xmt3m95n/image/upload/v1792834295/5395400624217725363_119.jpg" 
+            muted 
+            loop 
+            playsinline 
+            preload="auto"
+          ></video>
+          <div class="card-overlay"></div>
+          
+          <div class="card-top">
             <span class="tag launch">In development · Launching 2027</span>
+          </div>
+
+          <div class="card-bottom">
             <h3>Mitfly</h3>
             <p>A flight search and comparison platform designed to make travel planning easier.</p>
             <div class="links">
@@ -678,11 +698,16 @@ footer {
           </div>
         </div>
 
-        <!-- WidGefter YouTube Card -->
+        <!-- WidGefter Card: Full Bleed Photo with Zero Empty Gap -->
         <div class="card">
-          <img src="https://res.cloudinary.com/xmt3m95n/image/upload/v1792927888/5393193865726074974_119.jpg" alt="WidGefter YouTube Channel preview">
-          <div class="pad">
+          <img class="card-bg-media" src="https://res.cloudinary.com/xmt3m95n/image/upload/v1792927888/5393193865726074974_119.jpg" alt="WidGefter YouTube Channel photo">
+          <div class="card-overlay"></div>
+
+          <div class="card-top">
             <span class="tag youtube">YouTube channel</span>
+          </div>
+
+          <div class="card-bottom">
             <h3>WidGefter</h3>
             <p>A channel about entrepreneurship, startups, and SaaS development.</p>
             <div class="links">
@@ -786,7 +811,7 @@ footer {
 
 <footer>
   <div class="wrap">
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: gap: 12px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
       <span>© 2026 Samir Bekirli</span>
       <span style="font-size: 13px;">Mitfly · Founder • WidGefter · Creator</span>
     </div>
@@ -794,6 +819,20 @@ footer {
 </footer>
 
 <script>
+// Mitfly Card Hover to Play / Resume Video Logic
+const mitflyCard = document.getElementById('mitfly-card');
+const mitflyVideo = document.getElementById('mitfly-video');
+
+if (mitflyCard && mitflyVideo) {
+  mitflyCard.addEventListener('mouseenter', () => {
+    mitflyVideo.play().catch(() => {});
+  });
+  mitflyCard.addEventListener('mouseleave', () => {
+    mitflyVideo.pause();
+  });
+}
+
+// Q&A Accordion with Typewriter Animation
 const typingIntervals = {};
 
 function toggleQA(id) {
