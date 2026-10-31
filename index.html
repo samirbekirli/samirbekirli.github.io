@@ -1,245 +1,656 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="-_gOPX8f1ig5nN51_KZGV8leubjayQ3U-FQ0aiLD0E8" />
-<title>Samir Bekirli Mitfly - Founder of Mitfly | WidGefter</title>
-<meta name="description" content="Samir Bekirli is a developer and the founder of Mitfly, a flight search and comparison platform. He also runs WidGefter, a YouTube channel about entrepreneurship, startups, and SaaS development.">
-<link rel="canonical" href="https://samirbekirli.github.io/">
-<link rel="icon" href="https://github.com/samirbekirli.png?size=64">
-<meta property="og:type" content="profile">
-<meta property="og:title" content="Samir Bekirli | Founder of Mitfly | WidGefter">
-<meta property="og:description" content="Developer, founder of Mitfly, and creator of the WidGefter YouTube channel.">
-<meta property="og:url" content="https://samirbekirli.github.io/">
-<meta property="og:image" content="https://res.cloudinary.com/xmt3m95n/image/upload/v1792834295/5395400624217725363_119.jpg">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Samir Bekirli","url":"https://samirbekirli.github.io/","image":"https://github.com/samirbekirli.png","jobTitle":"Founder","description":"Developer, founder of Mitfly, and creator of the WidGefter YouTube channel about entrepreneurship, startups, and SaaS development.","worksFor":{"@type":"Organization","name":"Mitfly","url":"https://getmitfly.github.io/"},"sameAs":["https://www.wikidata.org/wiki/Q141824562","https://www.wikidata.org/wiki/Q141824565","https://github.com/samirbekirli","https://www.linkedin.com/in/samirbekirli","https://www.youtube.com/@WidGefter","https://x.com/WidGefter","https://dev.to/samirbekirli","https://www.indiehackers.com/samirbekirli"]}
-</script>
-<style>
-:root{--bg:#04060a;--card:rgba(14,18,27,.72);--cb:rgba(255,255,255,.1);--cbh:rgba(56,189,248,.4);--text:#f8fafc;--muted:#94a3b8;--dim:#64748b;--line:rgba(255,255,255,.08);--blue:#38bdf8}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;color-scheme:dark}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.65;color:var(--text);background:radial-gradient(900px 520px at 85% -8%,rgba(56,189,248,.14),transparent),var(--bg);min-height:100vh;overflow-x:hidden}
-.video-bg-container{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
-.video-bg{width:100%;height:100%;object-fit:cover;filter:blur(1.5px);transform:scale(1.03)}
-.video-overlay{position:fixed;inset:0;z-index:-1;background:rgba(4,6,10,.72);pointer-events:none}
-a{color:inherit;transition:.2s}img,video{max-width:100%;height:auto;display:block}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-header{position:sticky;top:0;z-index:50;background:rgba(4,6,10,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:72px}
-.brand{font-weight:700;font-size:19px;text-decoration:none;letter-spacing:-.01em;color:#fff}
-nav{display:flex;gap:26px}nav a{text-decoration:none;color:var(--muted);font-size:15px;font-weight:500}nav a:hover{color:#fff}
-.hero{padding:84px 0 56px}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
-.badge{display:inline-block;padding:6px 14px;border:1px solid rgba(56,189,248,.35);border-radius:999px;font-size:14px;color:var(--blue);background:rgba(56,189,248,.08);margin-bottom:6px}
-h1{font-size:clamp(40px,6vw,62px);line-height:1.08;margin:14px 0 16px;letter-spacing:-.025em;font-weight:800;background:linear-gradient(180deg,#fff 40%,#cbd5e1);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.lead{font-size:20px;color:var(--muted);margin:0 0 30px;max-width:580px}
-.btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 26px;border-radius:12px;font-weight:600;font-size:15px;text-decoration:none;transition:.2s cubic-bezier(.16,1,.3,1)}
-.btn.dark{background:#fff;color:#04060a;box-shadow:0 4px 20px rgba(255,255,255,.16)}
-.btn.dark:hover{background:#e2e8f0;transform:translateY(-2px);box-shadow:0 8px 26px rgba(255,255,255,.28)}
-.btn:not(.dark){background:rgba(255,255,255,.05);color:#f8fafc;border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(8px)}
-.btn:not(.dark):hover{background:rgba(56,189,248,.12);border-color:var(--blue);transform:translateY(-2px);box-shadow:0 8px 24px rgba(56,189,248,.25)}
-.icons{display:flex;gap:12px;flex-wrap:wrap}
-.ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.05);border:1px solid var(--cb);color:var(--text);transition:.25s}
-.ico svg{width:22px;height:22px;fill:currentColor}
-.ico:hover{color:#fff;border-color:var(--blue);background:rgba(56,189,248,.16);box-shadow:0 0 22px rgba(56,189,248,.5);transform:translateY(-3px)}
-.avatar{width:min(260px,100%);aspect-ratio:1;border-radius:50%;object-fit:cover;margin:0 auto;border:2px solid rgba(255,255,255,.15);box-shadow:0 24px 50px -12px rgba(0,0,0,.8),0 0 35px rgba(56,189,248,.12);transition:.3s}
-.avatar:hover{transform:scale(1.02);box-shadow:0 28px 60px -12px rgba(0,0,0,.9),0 0 45px rgba(56,189,248,.2)}
-section{padding:76px 0}
-.alt{background:rgba(255,255,255,.015);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-h2{font-size:clamp(28px,4vw,38px);line-height:1.15;margin:0 0 10px;letter-spacing:-.015em;font-weight:700;color:#fff}
-.sub{color:var(--muted);font-size:18px;max-width:640px;margin:0 0 34px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.card{position:relative;background:#090c14;border:1px solid var(--cb);border-radius:22px;overflow:hidden;min-height:460px;box-shadow:0 20px 40px -12px rgba(0,0,0,.8);transition:.35s cubic-bezier(.16,1,.3,1);display:flex;flex-direction:column;justify-content:space-between}
-.card:hover{transform:translateY(-5px);border-color:var(--cbh);box-shadow:0 28px 60px -12px rgba(0,0,0,.9),0 0 35px rgba(56,189,248,.18)}
-.card-bg-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .6s cubic-bezier(.16,1,.3,1)}
-.card:hover .card-bg-media{transform:scale(1.04)}
-.card-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(4,6,10,.25),rgba(4,6,10,.5) 35%,rgba(4,6,10,.88) 70%,#04060a);pointer-events:none}
-.card-top{position:relative;z-index:3;padding:24px}
-.card-bottom{position:relative;z-index:3;padding:28px 24px 26px;margin-top:auto}
-.card-bottom h3{margin:0 0 8px;font-size:26px;font-weight:700;color:#fff;letter-spacing:-.015em;text-shadow:0 2px 10px rgba(0,0,0,.7)}
-.card-bottom p{margin:0 0 20px;color:#cbd5e1;font-size:15.5px;text-shadow:0 1px 8px rgba(0,0,0,.8)}
-.tag{display:inline-flex;padding:5px 14px;border-radius:999px;font-size:12.5px;font-weight:600;backdrop-filter:blur(10px);width:fit-content}
-.tag.launch{color:#34d399;background:rgba(16,185,129,.18);border:1px solid rgba(16,185,129,.35)}
-.tag.youtube{color:#fca5a5;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.4)}
-.links{display:flex;flex-wrap:wrap;gap:10px}
-.links a{padding:10px 22px;border:1px solid rgba(255,255,255,.16);border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.08);backdrop-filter:blur(10px);color:#fff;transition:.2s}
-.links a:hover{background:#fff;color:#04060a;border-color:#fff;transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,255,255,.25)}
-.list a{display:block;padding:20px 24px;margin-bottom:12px;border:1px solid var(--cb);border-radius:16px;text-decoration:none;color:#fff;font-weight:600;background:var(--card);backdrop-filter:blur(12px);transition:.25s}
-.list a:hover{border-color:var(--cbh);box-shadow:0 0 26px rgba(56,189,248,.16);transform:translateY(-2px)}
-.list small{display:block;color:var(--muted);font-weight:400}
-.qa-container{display:flex;flex-direction:column;gap:14px}
-.qa-item{background:var(--card);border:1px solid var(--cb);border-radius:18px;overflow:hidden;backdrop-filter:blur(12px);transition:.25s}
-.qa-item:hover{border-color:rgba(255,255,255,.16)}
-.qa-item.active{border-color:rgba(56,189,248,.35);box-shadow:0 10px 30px -8px rgba(0,0,0,.6),0 0 20px rgba(56,189,248,.08)}
-.qa-btn{width:100%;display:flex;align-items:center;justify-content:space-between;padding:20px 24px;background:transparent;border:0;color:#fff;font:600 17px inherit;font-family:inherit;text-align:left;cursor:pointer;gap:14px}
-.qa-btn:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
-.qa-number{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid var(--cb);color:var(--blue);font-size:13px;font-weight:700;margin-right:12px;flex-shrink:0}
-.qa-chevron{font-size:16px;color:var(--muted);transition:transform .3s;flex-shrink:0}
-.qa-item.active .qa-chevron{transform:rotate(180deg);color:var(--blue)}
-.qa-answer{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1);padding:0 24px}
-.qa-item.active .qa-answer{max-height:560px;padding:0 24px 24px}
-.qa-text{color:#cbd5e1;font-size:15.5px;line-height:1.7;min-height:24px}
-.typing-cursor::after{content:"|";margin-left:3px;color:var(--blue);animation:blink .8s infinite}
-@keyframes blink{50%{opacity:0}}
-.team-box{margin-top:18px;padding:16px 20px;background:rgba(56,189,248,.06);border:1px solid rgba(56,189,248,.22);border-radius:14px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
-.team-box small{font-size:13px;color:var(--muted);display:block;margin-bottom:4px}
-.team-email{font-family:monospace;font-size:15px;color:var(--blue);background:rgba(0,0,0,.4);padding:6px 12px;border-radius:8px;border:1px solid rgba(56,189,248,.2)}
-.team-btn{display:inline-flex;padding:9px 20px;background:var(--blue);color:#04060a;border-radius:999px;font-weight:700;font-size:13.5px;text-decoration:none;transition:.2s}
-.team-btn:hover{background:#7dd3fc;transform:translateY(-1px);box-shadow:0 4px 18px rgba(56,189,248,.45)}
-footer{padding:40px 0;border-top:1px solid var(--line);color:var(--dim);font-size:14px}
-.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-@media(max-width:820px){.hero{padding:48px 0 32px}.grid,.two{grid-template-columns:1fr}.grid>.avatar{order:-1}.avatar{width:150px;margin:0}nav a:not(:last-child){display:none}section{padding:52px 0}.card{min-height:420px}.team-box{flex-direction:column;align-items:stretch}.team-btn{justify-content:center}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Verification & SEO (Sənin orijinal kodların) -->
+    <meta name="google-site-verification" content="-_gOPX8f1ig5nN51_KZGV8leubjayQ3U-FQ0aiLD0E8" />
+    <title>Samir Bekirli Mitfly - Founder of Mitfly | WidGefter</title>
+    <meta name="description" content="Samir Bekirli is a developer and the founder of Mitfly, a flight search and comparison platform. He also runs WidGefter, a YouTube channel about entrepreneurship, startups, and SaaS development.">
+    <link rel="canonical" href="https://samirbekirli.github.io/">
+    <link rel="icon" href="https://github.com/samirbekirli.png?size=64">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Samir Bekirli | Founder of Mitfly | WidGefter">
+    <meta property="og:description" content="Developer, founder of Mitfly, and creator of the WidGefter YouTube channel.">
+    <meta property="og:url" content="https://samirbekirli.github.io/">
+    <meta property="og:image" content="https://res.cloudinary.com/xmt3m95n/image/upload/v1792834295/5395400624217725363_119.jpg">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Samir Bekirli","url":"https://samirbekirli.github.io/","image":"https://github.com/samirbekirli.png","jobTitle":"Founder","description":"Developer, founder of Mitfly, and creator of the WidGefter YouTube channel about entrepreneurship, startups, and SaaS development.","worksFor":{"@type":"Organization","name":"Mitfly","url":"https://getmitfly.github.io/"},"sameAs":["https://www.wikidata.org/wiki/Q141824562","https://www.wikidata.org/wiki/Q141824565","https://github.com/samirbekirli","https://www.linkedin.com/in/samirbekirli","https://www.youtube.com/@WidGefter","https://x.com/WidGefter","https://dev.to/samirbekirli","https://www.indiehackers.com/samirbekirli"]}
+    </script>
+
+    <!-- Fontlar və İkonlar -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        sky: { 400: '#38bdf8' }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --bg: #04060a;
+            --blue: #38bdf8;
+        }
+        body {
+            background-color: var(--bg);
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        /* Sənin Orijinal Arxa Plan Videon */
+        .video-bg-container {
+            position: fixed;
+            inset: 0;
+            z-index: -3;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .video-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(1.5px);
+            transform: scale(1.03);
+        }
+        .video-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background: radial-gradient(900px 520px at 85% -8%, rgba(56, 189, 248, 0.14), transparent), rgba(4, 6, 10, 0.78);
+            pointer-events: none;
+        }
+        /* Grid Nəqşi */
+        .bg-grid {
+            background-size: 44px 44px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+        }
+        /* Mouse İzləyən Spotlight Kartlar */
+        .spotlight-card {
+            position: relative;
+            background: rgba(12, 16, 24, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .spotlight-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(56, 189, 248, 0.16), transparent 40%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 4;
+        }
+        .spotlight-card:hover::before {
+            opacity: 1;
+        }
+        .spotlight-card:hover {
+            border-color: rgba(56, 189, 248, 0.45);
+            transform: translateY(-4px);
+            box-shadow: 0 24px 55px -12px rgba(0, 0, 0, 0.9), 0 0 35px rgba(56, 189, 248, 0.16);
+        }
+        /* Layihə Kartlarının Arxa Plan Mediası (Sənin Videon və Şəklin) */
+        .card-bg-media {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .spotlight-card:hover .card-bg-media {
+            transform: scale(1.05);
+        }
+        .card-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            background: linear-gradient(180deg, rgba(4,6,10,0.2) 0%, rgba(4,6,10,0.55) 35%, rgba(4,6,10,0.92) 72%, #04060a 100%);
+            pointer-events: none;
+        }
+        /* Yazı Makinası Kursoru (Q&A üçün) */
+        .typing-cursor::after {
+            content: "|";
+            margin-left: 3px;
+            color: var(--blue);
+            animation: blink 0.8s infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+        
+        /* Q&A Açılıb-Bağlanma */
+        .qa-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease;
+            padding: 0 24px;
+        }
+        .qa-item.active .qa-answer {
+            max-height: 600px;
+            padding: 0 24px 24px;
+        }
+        .qa-item.active {
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 10px 30px -8px rgba(0,0,0,0.6), 0 0 25px rgba(56, 189, 248, 0.1);
+        }
+        .qa-item.active .qa-chevron {
+            transform: rotate(180deg);
+            color: var(--blue);
+        }
+    </style>
 </head>
-<body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="gh" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol><symbol id="yt" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol><symbol id="in" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol><symbol id="x" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></symbol></svg>
+<body class="bg-grid selection:bg-sky-400 selection:text-black">
 
-<div class="video-bg-container"><video class="video-bg" muted loop playsinline preload="none" data-src="https://res.cloudinary.com/ltltiopj/video/upload/v1792256457/Animate_dust_particles_in_loop_20261017205948.mp4"></video></div>
-<div class="video-overlay"></div>
+    <!-- Sənin Orijinal SVG İkonların -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="gh" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+        <symbol id="yt" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol>
+        <symbol id="in" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+        <symbol id="x" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></symbol>
+    </svg>
 
-<header><div class="wrap bar">
- <a class="brand" href="#top">Who am I?</a>
- <nav><a href="#projects">Projects</a><a href="#writing">Writing</a><a href="#qa">Q&amp;A</a><a href="#links">Links</a></nav>
-</div></header>
-
-<main id="top">
- <div class="wrap hero"><div class="grid">
-  <div>
-   <span class="badge">Developer · Founder · Creator</span>
-   <h1>Hi, I’m Samir Bekirli.</h1>
-   <p class="lead">I build web applications and AI-powered products. I’m the founder of Mitfly and the creator of WidGefter, a YouTube channel about entrepreneurship, startups, and SaaS development.</p>
-   <div class="btns"><a class="btn dark" href="#projects">See my projects</a><a class="btn" href="#links">Get in touch</a></div>
-   <div class="icons">
-    <a class="ico" href="https://x.com/WidGefter" target="_blank" rel="noopener" aria-label="X" title="X"><svg><use href="#x"/></svg></a>
-    <a class="ico" href="https://www.youtube.com/@WidGefter" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg><use href="#yt"/></svg></a>
-    <a class="ico" href="https://www.linkedin.com/in/samirbekirli" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg><use href="#in"/></svg></a>
-    <a class="ico" href="https://github.com/samirbekirli" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg><use href="#gh"/></svg></a>
-   </div>
-  </div>
-  <img class="avatar" src="https://github.com/samirbekirli.png?size=400" alt="Samir Bekirli">
- </div></div>
-
- <section id="projects" class="alt"><div class="wrap">
-  <h2>Projects</h2>
-  <p class="sub">What I’m working on right now.</p>
-  <div class="two">
-   <div class="card" id="mitfly-card">
-    <video id="mitfly-video" class="card-bg-media" src="https://res.cloudinary.com/ltltiopj/video/upload/v1792931513/gemini_generated_video_984d7209.mp4" poster="https://res.cloudinary.com/xmt3m95n/image/upload/v1792834295/5395400624217725363_119.jpg" muted loop playsinline preload="metadata"></video>
-    <div class="card-overlay"></div>
-    <div class="card-top"><span class="tag launch">In development · Launching 2027</span></div>
-    <div class="card-bottom">
-     <h3>Mitfly</h3>
-     <p>A flight search and comparison platform designed to make travel planning easier.</p>
-     <div class="links"><a href="https://getmitfly.github.io/" target="_blank" rel="noopener">Official website ↗</a><a href="mitfly.html">Project page</a></div>
+    <!-- 1. Sənin Arxa Plan Toz Hissəcikləri Videon (Cloudinary) -->
+    <div class="video-bg-container">
+        <video class="video-bg" muted loop playsinline preload="none" data-src="https://res.cloudinary.com/ltltiopj/video/upload/v1792256457/Animate_dust_particles_in_loop_20261017205948.mp4"></video>
     </div>
-   </div>
-   <div class="card">
-    <img class="card-bg-media" loading="lazy" src="https://res.cloudinary.com/xmt3m95n/image/upload/v1793115789/5406770781334741047_121.jpg" alt="WidGefter YouTube channel">
-    <div class="card-overlay"></div>
-    <div class="card-top"><span class="tag youtube">YouTube channel</span></div>
-    <div class="card-bottom">
-     <h3>WidGefter</h3>
-     <p>A channel about entrepreneurship, startups, and SaaS development.</p>
-     <div class="links"><a href="https://www.youtube.com/@WidGefter" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+    <div class="video-overlay"></div>
+
+    <!-- 2. Əlavə İnteraktiv Uçuş Radarı (Üst Qatda Yüngül Effekt) -->
+    <canvas id="flightCanvas" class="fixed inset-0 pointer-events-none z-[-1] opacity-40"></canvas>
+
+    <!-- HEADER / NAVİQASİYA -->
+    <header class="sticky top-0 z-50 bg-[#04060a]/85 backdrop-blur-xl border-b border-white/[0.08]">
+        <div class="max-w-[1040px] mx-auto px-6 h-[72px] flex items-center justify-between">
+            <a class="flex items-center gap-3 font-bold text-lg text-white tracking-tight group" href="#top">
+                <span class="w-2.5 h-2.5 rounded-full bg-sky-400 shadow-[0_0_12px_#38bdf8] group-hover:scale-125 transition"></span>
+                <span>Who am I?</span>
+            </a>
+            <div class="flex items-center gap-6">
+                <nav class="hidden md:flex items-center gap-7 text-[15px] font-medium text-slate-400">
+                    <a href="#projects" class="hover:text-white transition">Projects</a>
+                    <a href="#writing" class="hover:text-white transition">Writing</a>
+                    <a href="#qa" class="hover:text-white transition">Q&amp;A</a>
+                    <a href="#links" class="hover:text-white transition">Links</a>
+                </nav>
+                <button onclick="toggleCmdModal()" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/[0.05] hover:bg-sky-400/10 border border-white/10 hover:border-sky-400/40 text-xs text-slate-300 transition">
+                    <i data-lucide="terminal" class="w-3.5 h-3.5 text-sky-400"></i>
+                    <span class="hidden sm:inline">Command</span>
+                    <kbd class="px-1.5 py-0.5 text-[10px] font-mono bg-black/60 rounded border border-white/10 text-sky-400">⌘K</kbd>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- HERO BÖLMƏSİ (Sənin Mətnin + GitHub Avatarın) -->
+        <div class="max-w-[1040px] mx-auto px-6 pt-16 pb-14 md:pt-24 md:pb-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                
+                <div class="md:col-span-7 order-2 md:order-1">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-sky-400/35 bg-sky-400/10 text-sky-400 text-sm font-medium mb-4">
+                        <span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
+                        <span>Developer · Founder · Creator</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.08] mb-5 bg-gradient-to-b from-white via-white to-slate-400 bg-clip-text text-transparent">
+                        Hi, I’m Samir Bekirli.
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-400 leading-relaxed mb-8 max-w-[580px]">
+                        I build web applications and AI-powered products. I’m the founder of <strong class="text-white font-semibold">Mitfly</strong> and the creator of <strong class="text-white font-semibold">WidGefter</strong>, a YouTube channel about entrepreneurship, startups, and SaaS development.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3.5 mb-7">
+                        <a class="px-6 py-3.5 rounded-xl bg-white text-[#04060a] font-semibold text-[15px] shadow-[0_4px_20px_rgba(255,255,255,0.2)] hover:bg-slate-200 hover:-translate-y-0.5 transition flex items-center gap-2" href="#projects">
+                            <span>See my projects</span>
+                            <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+                        </a>
+                        <a class="px-6 py-3.5 rounded-xl bg-white/[0.05] text-white font-semibold text-[15px] border border-white/15 hover:bg-sky-400/15 hover:border-sky-400 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(56,189,248,0.25)] transition backdrop-blur-md" href="#links">
+                            Get in touch
+                        </a>
+                    </div>
+                    
+                    <div class="flex gap-3 flex-wrap">
+                        <a class="w-12 h-12 rounded-2xl grid place-items-center bg-white/[0.05] border border-white/10 text-white hover:border-sky-400 hover:bg-sky-400/15 hover:shadow-[0_0_22px_rgba(56,189,248,0.5)] hover:-translate-y-1 transition" href="https://x.com/WidGefter" target="_blank" rel="noopener" aria-label="X" title="X">
+                            <svg class="w-5 h-5 fill-current"><use href="#x"/></svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-2xl grid place-items-center bg-white/[0.05] border border-white/10 text-white hover:border-sky-400 hover:bg-sky-400/15 hover:shadow-[0_0_22px_rgba(56,189,248,0.5)] hover:-translate-y-1 transition" href="https://www.youtube.com/@WidGefter" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">
+                            <svg class="w-5 h-5 fill-current"><use href="#yt"/></svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-2xl grid place-items-center bg-white/[0.05] border border-white/10 text-white hover:border-sky-400 hover:bg-sky-400/15 hover:shadow-[0_0_22px_rgba(56,189,248,0.5)] hover:-translate-y-1 transition" href="https://www.linkedin.com/in/samirbekirli" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                            <svg class="w-5 h-5 fill-current"><use href="#in"/></svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-2xl grid place-items-center bg-white/[0.05] border border-white/10 text-white hover:border-sky-400 hover:bg-sky-400/15 hover:shadow-[0_0_22px_rgba(56,189,248,0.5)] hover:-translate-y-1 transition" href="https://github.com/samirbekirli" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                            <svg class="w-5 h-5 fill-current"><use href="#gh"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sənin Profil Şəklin + Parlayan Halqa Effekti -->
+                <div class="md:col-span-5 order-1 md:order-2 flex justify-start md:justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-tr from-sky-400 to-indigo-500 rounded-full blur-xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                        <img class="relative w-40 sm:w-64 aspect-square rounded-full object-cover border-2 border-white/20 shadow-2xl group-hover:scale-[1.03] transition duration-300" src="https://github.com/samirbekirli.png?size=400" alt="Samir Bekirli">
+                        <div class="absolute bottom-2 right-2 px-3 py-1 rounded-full bg-[#04060a]/90 border border-sky-400/40 backdrop-blur-md text-[11px] font-mono text-sky-400 flex items-center gap-1.5 shadow-lg">
+                            <i data-lucide="Plane" class="w-3 h-3"></i> @samirbekirli
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PROJECTS BÖLMƏSİ (Sənin Videon və Şəklinlə + Canlı Uçuş Barı) -->
+        <section id="projects" class="py-20 bg-white/[0.015] border-y border-white/[0.08]">
+            <div class="max-w-[1040px] mx-auto px-6">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Projects</h2>
+                        <p class="text-slate-400 text-lg">What I’m working on right now.</p>
+                    </div>
+                    <!-- Kiçik Canlı Mitfly Qiymət Radarı -->
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-black/50 border border-white/10 font-mono text-xs text-slate-300 backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span class="text-slate-400">Mitfly Live Sim:</span>
+                        <span id="liveRoute" class="text-white font-semibold">GYD ✈ LHR</span>
+                        <span id="livePrice" class="text-emerald-400 font-bold bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">$119</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+                    
+                    <!-- MITFLY KARTI (Sənin Gemini Videon və Posterinlə) -->
+                    <div class="spotlight-card rounded-[22px] min-h-[470px] flex flex-col justify-between" id="mitfly-card">
+                        <video id="mitfly-video" class="card-bg-media" src="https://res.cloudinary.com/ltltiopj/video/upload/v1792931513/gemini_generated_video_984d7209.mp4" poster="https://res.cloudinary.com/xmt3m95n/image/upload/v1792834295/5395400624217725363_119.jpg" muted loop playsinline preload="metadata"></video>
+                        <div class="card-overlay"></div>
+                        
+                        <div class="relative z-10 p-6 flex items-center justify-between">
+                            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-300 bg-emerald-500/20 border border-emerald-500/35 backdrop-blur-md">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                In development · Launching 2027
+                            </span>
+                            <span class="px-2.5 py-1 rounded-full bg-black/50 border border-white/10 text-[11px] font-mono text-slate-300 backdrop-blur-md">
+                                Hover to play ▶
+                            </span>
+                        </div>
+                        
+                        <div class="relative z-10 p-6 sm:p-7 mt-auto">
+                            <h3 class="text-2xl sm:text-[28px] font-bold text-white mb-2 drop-shadow-md">Mitfly</h3>
+                            <p class="text-slate-200 text-[15.5px] mb-6 drop-shadow">
+                                A flight search and comparison platform designed to make travel planning easier.
+                            </p>
+                            <div class="flex flex-wrap gap-2.5">
+                                <a href="https://getmitfly.github.io/" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white text-[#04060a] hover:bg-sky-400 transition shadow-lg">
+                                    Official website ↗
+                                </a>
+                                <a href="mitfly.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white/10 text-white border border-white/20 hover:bg-white hover:text-[#04060a] backdrop-blur-md transition">
+                                    Project page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WIDGEFTER KARTI (Sənin Cloudinary Şəklinlə) -->
+                    <div class="spotlight-card rounded-[22px] min-h-[470px] flex flex-col justify-between">
+                        <img class="card-bg-media" loading="lazy" src="https://res.cloudinary.com/xmt3m95n/image/upload/v1793115789/5406770781334741047_121.jpg" alt="WidGefter YouTube channel">
+                        <div class="card-overlay"></div>
+                        
+                        <div class="relative z-10 p-6">
+                            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-red-300 bg-red-500/20 border border-red-500/40 backdrop-blur-md">
+                                <i data-lucide="youtube" class="w-3.5 h-3.5"></i>
+                                YouTube channel
+                            </span>
+                        </div>
+                        
+                        <div class="relative z-10 p-6 sm:p-7 mt-auto">
+                            <h3 class="text-2xl sm:text-[28px] font-bold text-white mb-2 drop-shadow-md">WidGefter</h3>
+                            <p class="text-slate-200 text-[15.5px] mb-6 drop-shadow">
+                                A channel about entrepreneurship, startups, and SaaS development.
+                            </p>
+                            <div class="flex flex-wrap gap-2.5">
+                                <a href="https://www.youtube.com/@WidGefter" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white/10 text-white border border-white/20 hover:bg-white hover:text-[#04060a] backdrop-blur-md transition">
+                                    Watch on YouTube ↗
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- WRITING & COMMUNITY BÖLMƏSİ -->
+        <section id="writing" class="py-20">
+            <div class="max-w-[1040px] mx-auto px-6">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Writing and community</h2>
+                <p class="text-slate-400 text-lg mb-8">Where I share what I’m building.</p>
+                
+                <div class="space-y-3.5">
+                    <a href="https://dev.to/samirbekirli/hello-devto-im-building-mitfly-a-flight-search-and-comparison-platform-5d4m" target="_blank" rel="noopener" class="spotlight-card block p-6 rounded-2xl backdrop-blur-xl group">
+                        <div class="relative z-10 flex items-center justify-between gap-4">
+                            <div>
+                                <div class="text-lg font-semibold text-white group-hover:text-sky-400 transition">
+                                    Hello dev.to: I’m building Mitfly, a flight search and comparison platform
+                                </div>
+                                <small class="text-sm text-slate-400 font-mono">dev.to • Article</small>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-400 group-hover:text-sky-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://www.indiehackers.com/samirbekirli" target="_blank" rel="noopener" class="spotlight-card block p-6 rounded-2xl backdrop-blur-xl group">
+                        <div class="relative z-10 flex items-center justify-between gap-4">
+                            <div>
+                                <div class="text-lg font-semibold text-white group-hover:text-sky-400 transition">
+                                    Samir Bekirli on Indie Hackers
+                                </div>
+                                <small class="text-sm text-slate-400 font-mono">Indie Hackers profile</small>
+                            </div>
+                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-400 group-hover:text-sky-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Q&A (SUAL-CAVAB + YAZI MAKİNASI EFFEKTİ) -->
+        <section id="qa" class="py-20 bg-white/[0.015] border-y border-white/[0.08]">
+            <div class="max-w-[1040px] mx-auto px-6">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Frequently asked questions</h2>
+                <p class="text-slate-400 text-lg mb-9">Questions about my journey, projects, and how to collaborate.</p>
+                
+                <div class="flex flex-col gap-3.5">
+                    
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                        <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
+                            <span class="flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">1</span>
+                                Who am I?
+                            </span>
+                            <span class="qa-chevron text-slate-400 transition-transform duration-300 text-sm">▼</span>
+                        </button>
+                        <div class="qa-answer relative z-10">
+                            <div class="qa-text text-slate-300 text-[15.5px] leading-relaxed">Hi, I’m Samir Bekirli. I’m a software developer and entrepreneur building web applications, SaaS products, and AI-powered tools. I’m the founder of Mitfly, an intelligent flight search and comparison platform, and the creator of WidGefter, a YouTube channel where I share startup journeys and software engineering insights.</div>
+                        </div>
+                    </div>
+
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                        <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
+                            <span class="flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">2</span>
+                                What am I building? (What is Mitfly?)
+                            </span>
+                            <span class="qa-chevron text-slate-400 transition-transform duration-300 text-sm">▼</span>
+                        </button>
+                        <div class="qa-answer relative z-10">
+                            <div class="qa-text text-slate-300 text-[15.5px] leading-relaxed">Mitfly is a next-generation flight search and comparison platform engineered to simplify travel planning. It allows travelers to analyze the best flight options across hundreds of airlines and booking agencies in seconds, saving both valuable time and budget through intelligent filtering and price insights.</div>
+                        </div>
+                    </div>
+
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                        <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
+                            <span class="flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">3</span>
+                                When is the launch date?
+                            </span>
+                            <span class="qa-chevron text-slate-400 transition-transform duration-300 text-sm">▼</span>
+                        </button>
+                        <div class="qa-answer relative z-10">
+                            <div class="qa-text text-slate-300 text-[15.5px] leading-relaxed">Mitfly is slated for its official public release in 2027. We are currently actively developing the core flight search engine, data integrations, and fine-tuning the user experience for peak performance.</div>
+                        </div>
+                    </div>
+
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                        <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
+                            <span class="flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">4</span>
+                                Will it be free to use?
+                            </span>
+                            <span class="qa-chevron text-slate-400 transition-transform duration-300 text-sm">▼</span>
+                        </button>
+                        <div class="qa-answer relative z-10">
+                            <div class="qa-text text-slate-300 text-[15.5px] leading-relaxed">Yes! Mitfly will offer both free and premium plans. Core flight search, route comparison, and standard filtering will be completely free for everyone. Premium tiers will provide real-time price drop alerts, predictive fare analytics, and personalized route recommendations.</div>
+                        </div>
+                    </div>
+
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                        <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
+                            <span class="flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">5</span>
+                                Can I join the team?
+                            </span>
+                            <span class="qa-chevron text-slate-400 transition-transform duration-300 text-sm">▼</span>
+                        </button>
+                        <div class="qa-answer relative z-10">
+                            <div class="qa-text text-slate-300 text-[15.5px] leading-relaxed">Yes, you can definitely join us! We’d love to collaborate and build Mitfly into a world-class travel platform together. Whether you are into software engineering, product design, or marketing, our doors are open.</div>
+                            <div class="team-box mt-4 p-4 rounded-xl bg-sky-400/[0.06] border border-sky-400/25 flex flex-wrap items-center justify-between gap-4">
+                                <div>
+                                    <small class="text-xs text-slate-400 block mb-1">Contact Email:</small>
+                                    <span class="font-mono text-sm text-sky-400 bg-black/50 px-3 py-1.5 rounded-lg border border-sky-400/20 inline-block">samirbekirli2@gmail.com</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <button onclick="copyEmail()" id="copyBtn" class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-semibold transition">
+                                        Copy Email
+                                    </button>
+                                    <a class="px-5 py-2 rounded-full bg-sky-400 hover:bg-sky-300 text-[#04060a] font-bold text-xs transition shadow-[0_4px_18px_rgba(56,189,248,0.4)]" href="mailto:samirbekirli2@gmail.com?subject=Joining%20the%20Mitfly%20Team">
+                                        Send Email Now ✉
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- LINKS BÖLMƏSİ -->
+        <section id="links" class="py-20">
+            <div class="max-w-[1040px] mx-auto px-6">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Find me online</h2>
+                <p class="text-slate-400 text-lg mb-8">The best places to follow along.</p>
+                
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://github.com/samirbekirli" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/samirbekirli" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">LinkedIn ↗</a>
+                    <a href="https://www.youtube.com/@WidGefter" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">YouTube ↗</a>
+                    <a href="https://x.com/WidGefter" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">X ↗</a>
+                    <a href="https://dev.to/samirbekirli" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">dev.to ↗</a>
+                    <a href="https://www.indiehackers.com/samirbekirli" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">Indie Hackers ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-10 border-t border-white/[0.08] text-slate-500 text-sm">
+        <div class="max-w-[1040px] mx-auto px-6 flex justify-between items-center flex-wrap gap-4">
+            <span>© 2026 Samir Bekirli</span>
+            <span class="font-mono text-xs text-slate-400">Mitfly · Founder • WidGefter · Creator</span>
+        </div>
+    </footer>
+
+    <!-- COMMAND PALETTE (Ctrl + K) -->
+    <div id="cmdModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-start justify-center pt-24 px-4">
+        <div class="w-full max-w-lg rounded-2xl bg-[#090d16] border border-white/15 shadow-2xl overflow-hidden">
+            <div class="flex items-center px-4 py-3 border-b border-white/10">
+                <i data-lucide="terminal" class="w-4 h-4 text-sky-400 mr-3"></i>
+                <span class="text-xs font-mono text-slate-400 flex-1">Quick Navigation & Actions</span>
+                <button onclick="toggleCmdModal()" class="text-xs font-mono text-slate-400 hover:text-white px-2 py-1 rounded bg-white/5">ESC</button>
+            </div>
+            <div class="p-2 text-xs font-mono text-slate-300 space-y-1">
+                <a href="https://getmitfly.github.io/" target="_blank" class="flex items-center justify-between px-3 py-2.5 rounded-lg hover:bg-sky-400/10 hover:text-sky-400 transition">
+                    <span>✈️ Open Mitfly Official Website</span>
+                    <span>↗</span>
+                </a>
+                <a href="mitfly.html" class="flex items-center justify-between px-3 py-2.5 rounded-lg hover:bg-sky-400/10 hover:text-sky-400 transition">
+                    <span>📄 View Mitfly Project Page</span>
+                    <span>→</span>
+                </a>
+                <a href="https://www.youtube.com/@WidGefter" target="_blank" class="flex items-center justify-between px-3 py-2.5 rounded-lg hover:bg-sky-400/10 hover:text-sky-400 transition">
+                    <span>▶️ Watch WidGefter on YouTube</span>
+                    <span>↗</span>
+                </a>
+                <button onclick="copyEmail(); toggleCmdModal();" class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg hover:bg-sky-400/10 hover:text-sky-400 transition text-left">
+                    <span>📧 Copy Email (samirbekirli2@gmail.com)</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
     </div>
-   </div>
-  </div>
- </div></section>
 
- <section id="writing"><div class="wrap">
-  <h2>Writing and community</h2>
-  <p class="sub">Where I share what I’m building.</p>
-  <div class="list">
-   <a href="https://dev.to/samirbekirli/hello-devto-im-building-mitfly-a-flight-search-and-comparison-platform-5d4m" target="_blank" rel="noopener">Hello dev.to: I’m building Mitfly, a flight search and comparison platform<small>dev.to</small></a>
-   <a href="https://www.indiehackers.com/samirbekirli" target="_blank" rel="noopener">Samir Bekirli on Indie Hackers<small>Indie Hackers profile</small></a>
-  </div>
- </div></section>
+    <!-- JAVASCRIPT (Sənin Orijinal Skriptlərin + Yeni Effektlər) -->
+    <script>
+        lucide.createIcons();
 
- <section id="qa" class="alt"><div class="wrap">
-  <h2>Frequently asked questions</h2>
-  <p class="sub">Questions about my journey, projects, and how to collaborate.</p>
-  <div class="qa-container">
-   <div class="qa-item"><button class="qa-btn" aria-expanded="false"><span><span class="qa-number">1</span>Who am I?</span><span class="qa-chevron">▼</span></button>
-    <div class="qa-answer"><div class="qa-text">Hi, I’m Samir Bekirli. I’m a software developer and entrepreneur building web applications, SaaS products, and AI-powered tools. I’m the founder of Mitfly, an intelligent flight search and comparison platform, and the creator of WidGefter, a YouTube channel where I share startup journeys and software engineering insights.</div></div></div>
-   <div class="qa-item"><button class="qa-btn" aria-expanded="false"><span><span class="qa-number">2</span>What am I building? (What is Mitfly?)</span><span class="qa-chevron">▼</span></button>
-    <div class="qa-answer"><div class="qa-text">Mitfly is a next-generation flight search and comparison platform engineered to simplify travel planning. It allows travelers to analyze the best flight options across hundreds of airlines and booking agencies in seconds, saving both valuable time and budget through intelligent filtering and price insights.</div></div></div>
-   <div class="qa-item"><button class="qa-btn" aria-expanded="false"><span><span class="qa-number">3</span>When is the launch date?</span><span class="qa-chevron">▼</span></button>
-    <div class="qa-answer"><div class="qa-text">Mitfly is slated for its official public release in 2027. We are currently actively developing the core flight search engine, data integrations, and fine-tuning the user experience for peak performance.</div></div></div>
-   <div class="qa-item"><button class="qa-btn" aria-expanded="false"><span><span class="qa-number">4</span>Will it be free to use?</span><span class="qa-chevron">▼</span></button>
-    <div class="qa-answer"><div class="qa-text">Yes! Mitfly will offer both free and premium plans. Core flight search, route comparison, and standard filtering will be completely free for everyone. Premium tiers will provide real-time price drop alerts, predictive fare analytics, and personalized route recommendations.</div></div></div>
-   <div class="qa-item"><button class="qa-btn" aria-expanded="false"><span><span class="qa-number">5</span>Can I join the team?</span><span class="qa-chevron">▼</span></button>
-    <div class="qa-answer"><div class="qa-text">Yes, you can definitely join us! We’d love to collaborate and build Mitfly into a world-class travel platform together. Whether you are into software engineering, product design, or marketing, our doors are open.</div>
-     <div class="team-box"><div><small>Contact Email:</small><span class="team-email">samirbekirli2@gmail.com</span></div><a class="team-btn" href="mailto:samirbekirli2@gmail.com?subject=Joining%20the%20Mitfly%20Team">Send Email Now ✉</a></div></div></div>
-  </div>
- </div></section>
+        // 1. Sənin Arxa Plan Videon və Mitfly Hover Videon
+        const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const bg = document.querySelector('.video-bg');
+        const saveData = navigator.connection && navigator.connection.saveData;
+        if (bg && matchMedia('(min-width:821px)').matches && !reduce && !saveData) {
+            bg.src = bg.dataset.src;
+            bg.play().catch(() => {});
+        } else {
+            const container = document.querySelector('.video-bg-container');
+            if (container) container.remove();
+        }
 
- <section id="links"><div class="wrap">
-  <h2>Find me online</h2>
-  <p class="sub">The best places to follow along.</p>
-  <div class="links">
-   <a href="https://github.com/samirbekirli" target="_blank" rel="noopener">GitHub ↗</a>
-   <a href="https://www.linkedin.com/in/samirbekirli" target="_blank" rel="noopener">LinkedIn ↗</a>
-   <a href="https://www.youtube.com/@WidGefter" target="_blank" rel="noopener">YouTube ↗</a>
-   <a href="https://x.com/WidGefter" target="_blank" rel="noopener">X ↗</a>
-   <a href="https://dev.to/samirbekirli" target="_blank" rel="noopener">dev.to ↗</a>
-   <a href="https://www.indiehackers.com/samirbekirli" target="_blank" rel="noopener">Indie Hackers ↗</a>
-  </div>
- </div></section>
-</main>
+        const card = document.getElementById('mitfly-card'), vid = document.getElementById('mitfly-video');
+        if (card && vid && !reduce) {
+            if (matchMedia('(hover:hover)').matches) {
+                card.addEventListener('mouseenter', () => vid.play().catch(() => {}));
+                card.addEventListener('mouseleave', () => vid.pause());
+            } else {
+                new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? vid.play().catch(() => {}) : vid.pause()), { threshold: .6 }).observe(card);
+            }
+        }
 
-<footer><div class="wrap foot"><span>© 2026 Samir Bekirli</span><span>Mitfly · Founder • WidGefter · Creator</span></div></footer>
+        // 2. Sənin Yazı Makinası Effektli Q&A Skriptin
+        const items = [...document.querySelectorAll('.qa-item')];
+        items.forEach(item => {
+            const txt = item.querySelector('.qa-text');
+            txt.dataset.full = txt.textContent;
+            item.querySelector('.qa-btn').addEventListener('click', () => {
+                const wasOpen = item.classList.contains('active');
+                items.forEach(close);
+                if (!wasOpen) open(item);
+            });
+        });
+        function close(item) {
+            clearInterval(item._t);
+            item.classList.remove('active');
+            item.querySelector('.qa-btn').setAttribute('aria-expanded', 'false');
+            const t = item.querySelector('.qa-text');
+            t.textContent = t.dataset.full;
+            t.classList.remove('typing-cursor');
+            const b = item.querySelector('.team-box');
+            if (b) b.style.display = '';
+        }
+        function open(item) {
+            item.classList.add('active');
+            item.querySelector('.qa-btn').setAttribute('aria-expanded', 'true');
+            if (reduce) return;
+            const t = item.querySelector('.qa-text'), full = t.dataset.full, b = item.querySelector('.team-box');
+            t.textContent = '';
+            t.classList.add('typing-cursor');
+            if (b) b.style.display = 'none';
+            let i = 0;
+            item._t = setInterval(() => {
+                if (i < full.length) {
+                    t.textContent += full.charAt(i++);
+                } else {
+                    clearInterval(item._t);
+                    t.classList.remove('typing-cursor');
+                    if (b) b.style.display = '';
+                }
+            }, 14);
+        }
 
-<script>
-const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const bg=document.querySelector('.video-bg');
-const saveData=navigator.connection&&navigator.connection.saveData;
-if(bg&&matchMedia('(min-width:821px)').matches&&!reduce&&!saveData){bg.src=bg.dataset.src;bg.play().catch(()=>{});}
-else{document.querySelector('.video-bg-container').remove();}
+        // 3. Mouse İzləyən Spotlight İşıq Effekti
+        document.querySelectorAll('.spotlight-card').forEach(c => {
+            c.addEventListener('mousemove', e => {
+                const r = c.getBoundingClientRect();
+                c.style.setProperty('--mouse-x', `${e.clientX - r.left}px`);
+                c.style.setProperty('--mouse-y', `${e.clientY - r.top}px`);
+            });
+        });
 
-const card=document.getElementById('mitfly-card'),vid=document.getElementById('mitfly-video');
-if(card&&vid&&!reduce){
- if(matchMedia('(hover:hover)').matches){
-  card.addEventListener('mouseenter',()=>vid.play().catch(()=>{}));
-  card.addEventListener('mouseleave',()=>vid.pause());
- }else{
-  new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?vid.play().catch(()=>{}):vid.pause()),{threshold:.6}).observe(card);
- }
-}
+        // 4. Canlı Mitfly Qiymət Simulyatoru
+        const simRoutes = [
+            { r: 'GYD ✈ LHR', p: '$119' },
+            { r: 'JFK ✈ CDG', p: '$275' },
+            { r: 'DXB ✈ HND', p: '$390' },
+            { r: 'IST ✈ AMS', p: '$85' }
+        ];
+        let sIdx = 0;
+        setInterval(() => {
+            sIdx = (sIdx + 1) % simRoutes.length;
+            document.getElementById('liveRoute').textContent = simRoutes[sIdx].r;
+            document.getElementById('livePrice').textContent = simRoutes[sIdx].p;
+        }, 3000);
 
-const items=[...document.querySelectorAll('.qa-item')];
-items.forEach(item=>{
- const txt=item.querySelector('.qa-text');
- txt.dataset.full=txt.textContent;
- item.querySelector('.qa-btn').addEventListener('click',()=>{
-  const wasOpen=item.classList.contains('active');
-  items.forEach(close);
-  if(!wasOpen)open(item);
- });
-});
-function close(item){
- clearInterval(item._t);
- item.classList.remove('active');
- item.querySelector('.qa-btn').setAttribute('aria-expanded','false');
- const t=item.querySelector('.qa-text');
- t.textContent=t.dataset.full;t.classList.remove('typing-cursor');
- const b=item.querySelector('.team-box');if(b)b.style.display='';
-}
-function open(item){
- item.classList.add('active');
- item.querySelector('.qa-btn').setAttribute('aria-expanded','true');
- if(reduce)return;
- const t=item.querySelector('.qa-text'),full=t.dataset.full,b=item.querySelector('.team-box');
- t.textContent='';t.classList.add('typing-cursor');
- if(b)b.style.display='none';
- let i=0;
- item._t=setInterval(()=>{
-  if(i<full.length){t.textContent+=full.charAt(i++);}
-  else{clearInterval(item._t);t.classList.remove('typing-cursor');if(b)b.style.display='';}
- },14);
-}
-</script>
+        // 5. E-poçt Kopyalama və Ctrl+K Modal
+        function copyEmail() {
+            navigator.clipboard.writeText('samirbekirli2@gmail.com');
+            const btn = document.getElementById('copyBtn');
+            if (btn) {
+                btn.textContent = 'Copied! ✓';
+                setTimeout(() => btn.textContent = 'Copy Email', 2000);
+            }
+        }
+        function toggleCmdModal() {
+            document.getElementById('cmdModal').classList.toggle('hidden');
+        }
+        window.addEventListener('keydown', e => {
+            if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+                e.preventDefault();
+                toggleCmdModal();
+            }
+            if (e.key === 'Escape') document.getElementById('cmdModal').classList.add('hidden');
+        });
+
+        // 6. Yüngül Uçuş Radarı Xətləri (Canvas)
+        const canvas = document.getElementById('flightCanvas');
+        const ctx = canvas.getContext('2d');
+        let w, h;
+        function resize() { w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; }
+        window.addEventListener('resize', resize); resize();
+        const pts = [{x:0.15,y:0.25},{x:0.55,y:0.18},{x:0.85,y:0.35},{x:0.75,y:0.75},{x:0.25,y:0.7}];
+        const arcs = Array.from({length:4}, (_,i)=>({a:pts[i], b:pts[(i+2)%pts.length], t:Math.random(), s:0.002}));
+        function animateRadar() {
+            if (reduce) return;
+            ctx.clearRect(0,0,w,h);
+            arcs.forEach(arc => {
+                const x1=arc.a.x*w, y1=arc.a.y*h, x2=arc.b.x*w, y2=arc.b.y*h;
+                const cx=(x1+x2)/2, cy=Math.min(y1,y2)-60;
+                ctx.beginPath(); ctx.moveTo(x1,y1); ctx.quadraticCurveTo(cx,cy,x2,y2);
+                ctx.strokeStyle='rgba(56,189,248,0.1)'; ctx.stroke();
+                const t=arc.t;
+                const px=(1-t)*(1-t)*x1 + 2*(1-t)*t*cx + t*t*x2;
+                const py=(1-t)*(1-t)*y1 + 2*(1-t)*t*cy + t*t*y2;
+                ctx.beginPath(); ctx.arc(px,py,2,0,Math.PI*2);
+                ctx.fillStyle='#38bdf8'; ctx.fill();
+                arc.t += arc.s; if(arc.t>=1) arc.t=0;
+            });
+            requestAnimationFrame(animateRadar);
+        }
+        animateRadar();
+    </script>
 </body>
 </html>
