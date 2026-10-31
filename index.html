@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Verification & SEO (Sənin orijinal kodların) -->
+    <!-- Google Verification & SEO (100% Qorunub) -->
     <meta name="google-site-verification" content="-_gOPX8f1ig5nN51_KZGV8leubjayQ3U-FQ0aiLD0E8" />
     <title>Samir Bekirli Mitfly - Founder of Mitfly | WidGefter</title>
     <meta name="description" content="Samir Bekirli is a developer and the founder of Mitfly, a flight search and comparison platform. He also runs WidGefter, a YouTube channel about entrepreneurship, startups, and SaaS development.">
@@ -14,6 +14,11 @@
     <meta property="og:description" content="Developer, founder of Mitfly, and creator of the WidGefter YouTube channel.">
     <meta property="og:url" content="https://samirbekirli.github.io/">
     <meta property="og:image" content="https://res.cloudinary.com/xmt3m95n/image/upload/v1792834295/5395400624217725363_119.jpg">
+    
+    <!-- Yeni Hero Şəklinin Sayta Girən Kimi Anında Açılması Üçün Preload -->
+    <link rel="preload" as="image" href="https://res.cloudinary.com/ltltiopj/image/upload/v1793457737/Gemini_Generated_Image_c6sc96c6sc96c6sc.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="https://github.com/samirbekirli.png?size=400" fetchpriority="high">
+
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Person","name":"Samir Bekirli","url":"https://samirbekirli.github.io/","image":"https://github.com/samirbekirli.png","jobTitle":"Founder","description":"Developer, founder of Mitfly, and creator of the WidGefter YouTube channel about entrepreneurship, startups, and SaaS development.","worksFor":{"@type":"Organization","name":"Mitfly","url":"https://getmitfly.github.io/"},"sameAs":["https://www.wikidata.org/wiki/Q141824562","https://www.wikidata.org/wiki/Q141824565","https://github.com/samirbekirli","https://www.linkedin.com/in/samirbekirli","https://www.youtube.com/@WidGefter","https://x.com/WidGefter","https://dev.to/samirbekirli","https://www.indiehackers.com/samirbekirli"]}
     </script>
@@ -44,6 +49,7 @@
         :root {
             --bg: #04060a;
             --blue: #38bdf8;
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
         }
         body {
             background-color: var(--bg);
@@ -79,13 +85,90 @@
                 linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
         }
+
+        /* =========================================================
+           RESEND IRIDESCENT GRADIENT (Şəkil 4 & 5: Profil və Rozet üçün)
+           ========================================================= */
+        @keyframes iridescentShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Profil Şəklinin Çölündəki Rəng Dəyişən Halqa */
+        .avatar-iridescent-ring {
+            position: relative;
+            padding: 3.5px;
+            border-radius: 9999px;
+            background: linear-gradient(90deg, #10b981, #eab308, #ec4899, #8b5cf6, #38bdf8, #10b981);
+            background-size: 300% 300%;
+            animation: iridescentShift 6s linear infinite;
+            box-shadow: 0 24px 55px -12px rgba(0, 0, 0, 0.85), 0 0 38px rgba(56, 189, 248, 0.18);
+            transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+        }
+        .avatar-iridescent-ring::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 9999px;
+            background: inherit;
+            background-size: inherit;
+            animation: inherit;
+            filter: blur(14px);
+            opacity: 0.45;
+            z-index: -1;
+            transition: opacity 0.4s ease;
+        }
+        .avatar-iridescent-ring:hover {
+            transform: scale(1.025);
+        }
+        .avatar-iridescent-ring:hover::before {
+            opacity: 0.75;
+        }
+
+        /* @samirbekirli və Digər Resend Stilində Kapsul Haşiyələri */
+        .resend-pill {
+            background:
+                linear-gradient(#080b12, #080b12) padding-box,
+                linear-gradient(90deg, #10b981, #eab308, #ec4899, #8b5cf6, #38bdf8, #10b981) border-box;
+            background-size: 100% 100%, 300% 300%;
+            border: 1.5px solid transparent;
+            animation: iridescentShift 6s linear infinite;
+        }
+
+        /* Hero-dakı Yeni Şəkil Qutusu (Şəkil 3-ün yerinə) */
+        .hero-banner-img {
+            display: block;
+            width: auto;
+            max-width: min(320px, 88vw);
+            height: auto;
+            max-height: 68px;
+            object-fit: contain;
+            border-radius: 9999px;
+            margin-bottom: 18px;
+            background:
+                linear-gradient(#06080e, #06080e) padding-box,
+                linear-gradient(90deg, #10b981, #eab308, #ec4899, #8b5cf6, #38bdf8, #10b981) border-box;
+            background-size: 100% 100%, 300% 300%;
+            border: 1.5px solid transparent;
+            animation: iridescentShift 6s linear infinite;
+            box-shadow: 0 8px 28px -6px rgba(56, 189, 248, 0.22);
+        }
+        @media (max-width: 640px) {
+            .hero-banner-img {
+                max-width: 240px;
+                max-height: 52px;
+                margin-bottom: 14px;
+            }
+        }
+
         /* Mouse İzləyən Spotlight Kartlar */
         .spotlight-card {
             position: relative;
             background: rgba(12, 16, 24, 0.75);
             border: 1px solid rgba(255, 255, 255, 0.1);
             overflow: hidden;
-            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.35s var(--ease-out);
         }
         .spotlight-card::before {
             content: '';
@@ -105,7 +188,7 @@
             transform: translateY(-4px);
             box-shadow: 0 24px 55px -12px rgba(0, 0, 0, 0.9), 0 0 35px rgba(56, 189, 248, 0.16);
         }
-        /* Layihə Kartlarının Arxa Plan Mediası (Sənin Videon və Şəklin) */
+        /* Layihə Kartlarının Arxa Plan Mediası */
         .card-bg-media {
             position: absolute;
             inset: 0;
@@ -113,7 +196,7 @@
             height: 100%;
             object-fit: cover;
             z-index: 1;
-            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: transform 0.6s var(--ease-out);
         }
         .spotlight-card:hover .card-bg-media {
             transform: scale(1.05);
@@ -138,7 +221,7 @@
         .qa-answer {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease;
+            transition: max-height 0.4s var(--ease-out), padding 0.3s ease;
             padding: 0 24px;
         }
         .qa-item.active .qa-answer {
@@ -152,6 +235,32 @@
         .qa-item.active .qa-chevron {
             transform: rotate(180deg);
             color: var(--blue);
+        }
+
+        /* =========================================================
+           PEŞƏKAR SCROLL-REVEAL ANİMASİYASI (Aşağı sürüşdürdükcə açılma)
+           ========================================================= */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(28px) scale(0.985);
+            transition: opacity 0.75s var(--ease-out), transform 0.75s var(--ease-out);
+            will-change: opacity, transform;
+        }
+        .reveal-up.is-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .delay-1 { transition-delay: 0.08s; }
+        .delay-2 { transition-delay: 0.16s; }
+        .delay-3 { transition-delay: 0.24s; }
+        .delay-4 { transition-delay: 0.32s; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-up {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
         }
     </style>
 </head>
@@ -171,62 +280,69 @@
     </div>
     <div class="video-overlay"></div>
 
-    <!-- 2. Əlavə İnteraktiv Uçuş Radarı (Üst Qatda Yüngül Effekt) -->
+    <!-- 2. Əlavə İnteraktiv Uçuş Radarı -->
     <canvas id="flightCanvas" class="fixed inset-0 pointer-events-none z-[-1] opacity-40"></canvas>
 
-    <!-- HEADER / NAVİQASİYA -->
+    <!-- HEADER / NAVİQASİYA (Command silindi -> Peşəkar Resend/Apple tərzi menyu) -->
     <header class="sticky top-0 z-50 bg-[#04060a]/85 backdrop-blur-xl border-b border-white/[0.08]">
-        <div class="max-w-[1040px] mx-auto px-6 h-[72px] flex items-center justify-between">
-            <a class="flex items-center gap-3 font-bold text-lg text-white tracking-tight group" href="#top">
+        <div class="max-w-[1040px] mx-auto px-6 h-[70px] flex items-center justify-between">
+            <a class="flex items-center gap-2.5 font-bold text-[18px] text-white tracking-tight group" href="#top">
                 <span class="w-2.5 h-2.5 rounded-full bg-sky-400 shadow-[0_0_12px_#38bdf8] group-hover:scale-125 transition"></span>
                 <span>Who am I?</span>
             </a>
-            <div class="flex items-center gap-6">
-                <nav class="hidden md:flex items-center gap-7 text-[15px] font-medium text-slate-400">
-                    <a href="#projects" class="hover:text-white transition">Projects</a>
-                    <a href="#writing" class="hover:text-white transition">Writing</a>
-                    <a href="#qa" class="hover:text-white transition">Q&amp;A</a>
-                    <a href="#links" class="hover:text-white transition">Links</a>
-                </nav>
-                <button onclick="toggleCmdModal()" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/[0.05] hover:bg-sky-400/10 border border-white/10 hover:border-sky-400/40 text-xs text-slate-300 transition">
-                    <i data-lucide="terminal" class="w-3.5 h-3.5 text-sky-400"></i>
-                    <span class="hidden sm:inline">Command</span>
-                    <kbd class="px-1.5 py-0.5 text-[10px] font-mono bg-black/60 rounded border border-white/10 text-sky-400">⌘K</kbd>
-                </button>
-            </div>
+
+            <nav class="hidden md:flex items-center gap-8 text-[14.5px] font-medium text-slate-400">
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#writing" class="hover:text-white transition">Writing</a>
+                <a href="#qa" class="hover:text-white transition">Q&amp;A</a>
+                <a href="#links" class="hover:text-white transition">Links</a>
+            </nav>
+
+            <!-- Şəkil 2-dəki Command əvəzinə Peşəkar CTA Düyməsi -->
+            <a href="#links" class="resend-pill px-4 py-2 rounded-full text-xs sm:text-[13px] font-semibold text-white hover:scale-[1.03] transition flex items-center gap-1.5 shadow-lg">
+                <span>Get in touch</span>
+                <span class="text-sky-400">↗</span>
+            </a>
         </div>
     </header>
 
     <main id="top">
-        <!-- HERO BÖLMƏSİ (Sənin Mətnin + GitHub Avatarın) -->
-        <div class="max-w-[1040px] mx-auto px-6 pt-16 pb-14 md:pt-24 md:pb-20">
+        <!-- HERO BÖLMƏSİ -->
+        <div class="max-w-[1040px] mx-auto px-6 pt-14 pb-14 md:pt-24 md:pb-20">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                 
                 <div class="md:col-span-7 order-2 md:order-1">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-sky-400/35 bg-sky-400/10 text-sky-400 text-sm font-medium mb-4">
-                        <span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
-                        <span>Developer · Founder · Creator</span>
+                    <!-- Şəkil 3-ün Yerinə Qoyulan Yeni Şəkil (Sıfır gecikmə ilə açılır) -->
+                    <div class="reveal-up">
+                        <img 
+                            src="https://res.cloudinary.com/ltltiopj/image/upload/v1793457737/Gemini_Generated_Image_c6sc96c6sc96c6sc.jpg" 
+                            alt="Developer · Founder · Creator" 
+                            fetchpriority="high" 
+                            loading="eager" 
+                            decoding="sync"
+                            class="hero-banner-img"
+                        >
                     </div>
                     
-                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.08] mb-5 bg-gradient-to-b from-white via-white to-slate-400 bg-clip-text text-transparent">
+                    <h1 class="reveal-up delay-1 text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.08] mb-5 bg-gradient-to-b from-white via-white to-slate-400 bg-clip-text text-transparent">
                         Hi, I’m Samir Bekirli.
                     </h1>
                     
-                    <p class="text-lg sm:text-xl text-slate-400 leading-relaxed mb-8 max-w-[580px]">
+                    <p class="reveal-up delay-2 text-lg sm:text-xl text-slate-400 leading-relaxed mb-8 max-w-[580px]">
                         I build web applications and AI-powered products. I’m the founder of <strong class="text-white font-semibold">Mitfly</strong> and the creator of <strong class="text-white font-semibold">WidGefter</strong>, a YouTube channel about entrepreneurship, startups, and SaaS development.
                     </p>
                     
-                    <div class="flex flex-wrap gap-3.5 mb-7">
+                    <div class="reveal-up delay-3 flex flex-wrap gap-3.5 mb-7">
                         <a class="px-6 py-3.5 rounded-xl bg-white text-[#04060a] font-semibold text-[15px] shadow-[0_4px_20px_rgba(255,255,255,0.2)] hover:bg-slate-200 hover:-translate-y-0.5 transition flex items-center gap-2" href="#projects">
                             <span>See my projects</span>
                             <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
                         </a>
-                        <a class="px-6 py-3.5 rounded-xl bg-white/[0.05] text-white font-semibold text-[15px] border border-white/15 hover:bg-sky-400/15 hover:border-sky-400 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(56,189,248,0.25)] transition backdrop-blur-md" href="#links">
+                        <a class="resend-pill px-6 py-3.5 rounded-xl text-white font-semibold text-[15px] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(56,189,248,0.25)] transition" href="#links">
                             Get in touch
                         </a>
                     </div>
                     
-                    <div class="flex gap-3 flex-wrap">
+                    <div class="reveal-up delay-4 flex gap-3 flex-wrap">
                         <a class="w-12 h-12 rounded-2xl grid place-items-center bg-white/[0.05] border border-white/10 text-white hover:border-sky-400 hover:bg-sky-400/15 hover:shadow-[0_0_22px_rgba(56,189,248,0.5)] hover:-translate-y-1 transition" href="https://x.com/WidGefter" target="_blank" rel="noopener" aria-label="X" title="X">
                             <svg class="w-5 h-5 fill-current"><use href="#x"/></svg>
                         </a>
@@ -242,51 +358,46 @@
                     </div>
                 </div>
 
-                <!-- Sənin Profil Şəklin + Parlayan Halqa Effekti -->
-                <div class="md:col-span-5 order-1 md:order-2 flex justify-start md:justify-center">
+                <!-- Şəkil 4 & 5: Sənin Profil Şəklin + Çölündə Resend Rəng Dəyişən Halqa -->
+                <div class="md:col-span-5 order-1 md:order-2 flex justify-start md:justify-center reveal-up delay-1">
                     <div class="relative group">
-                        <div class="absolute -inset-1 bg-gradient-to-tr from-sky-400 to-indigo-500 rounded-full blur-xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
-                        <img class="relative w-40 sm:w-64 aspect-square rounded-full object-cover border-2 border-white/20 shadow-2xl group-hover:scale-[1.03] transition duration-300" src="https://github.com/samirbekirli.png?size=400" alt="Samir Bekirli">
-                        <div class="absolute bottom-2 right-2 px-3 py-1 rounded-full bg-[#04060a]/90 border border-sky-400/40 backdrop-blur-md text-[11px] font-mono text-sky-400 flex items-center gap-1.5 shadow-lg">
-                            <i data-lucide="Plane" class="w-3 h-3"></i> @samirbekirli
+                        <div class="avatar-iridescent-ring">
+                            <img 
+                                class="w-40 sm:w-64 aspect-square rounded-full object-cover block bg-[#04060a]" 
+                                src="https://github.com/samirbekirli.png?size=400" 
+                                alt="Samir Bekirli"
+                                fetchpriority="high"
+                            >
                         </div>
+                        <a href="https://github.com/samirbekirli" target="_blank" rel="noopener" class="resend-pill absolute bottom-2 right-1 px-3.5 py-1.5 rounded-full text-xs font-mono text-white flex items-center gap-1.5 shadow-xl hover:scale-105 transition">
+                            <i data-lucide="plane" class="w-3.5 h-3.5 text-sky-400"></i>
+                            <span>@samirbekirli</span>
+                        </a>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <!-- PROJECTS BÖLMƏSİ (Sənin Videon və Şəklinlə + Canlı Uçuş Barı) -->
+        <!-- PROJECTS BÖLMƏSİ (Şəkil 6-dakı Mitfly Live Sim və Şəkil 7-dəki Hover to play silindi) -->
         <section id="projects" class="py-20 bg-white/[0.015] border-y border-white/[0.08]">
             <div class="max-w-[1040px] mx-auto px-6">
-                <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
-                    <div>
-                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Projects</h2>
-                        <p class="text-slate-400 text-lg">What I’m working on right now.</p>
-                    </div>
-                    <!-- Kiçik Canlı Mitfly Qiymət Radarı -->
-                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-black/50 border border-white/10 font-mono text-xs text-slate-300 backdrop-blur-md">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                        <span class="text-slate-400">Mitfly Live Sim:</span>
-                        <span id="liveRoute" class="text-white font-semibold">GYD ✈ LHR</span>
-                        <span id="livePrice" class="text-emerald-400 font-bold bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">$119</span>
-                    </div>
+                <div class="mb-10 reveal-up">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Projects</h2>
+                    <p class="text-slate-400 text-lg">What I’m working on right now.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
                     
-                    <!-- MITFLY KARTI (Sənin Gemini Videon və Posterinlə) -->
-                    <div class="spotlight-card rounded-[22px] min-h-[470px] flex flex-col justify-between" id="mitfly-card">
+                    <!-- MITFLY KARTI -->
+                    <div class="spotlight-card rounded-[22px] min-h-[470px] flex flex-col justify-between reveal-up delay-1" id="mitfly-card">
                         <video id="mitfly-video" class="card-bg-media" src="https://res.cloudinary.com/ltltiopj/video/upload/v1792931513/gemini_generated_video_984d7209.mp4" poster="https://res.cloudinary.com/xmt3m95n/image/upload/v1792834295/5395400624217725363_119.jpg" muted loop playsinline preload="metadata"></video>
                         <div class="card-overlay"></div>
                         
-                        <div class="relative z-10 p-6 flex items-center justify-between">
+                        <div class="relative z-10 p-6">
                             <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-300 bg-emerald-500/20 border border-emerald-500/35 backdrop-blur-md">
                                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                                 In development · Launching 2027
-                            </span>
-                            <span class="px-2.5 py-1 rounded-full bg-black/50 border border-white/10 text-[11px] font-mono text-slate-300 backdrop-blur-md">
-                                Hover to play ▶
                             </span>
                         </div>
                         
@@ -306,8 +417,8 @@
                         </div>
                     </div>
 
-                    <!-- WIDGEFTER KARTI (Sənin Cloudinary Şəklinlə) -->
-                    <div class="spotlight-card rounded-[22px] min-h-[470px] flex flex-col justify-between">
+                    <!-- WIDGEFTER KARTI -->
+                    <div class="spotlight-card rounded-[22px] min-h-[470px] flex flex-col justify-between reveal-up delay-2">
                         <img class="card-bg-media" loading="lazy" src="https://res.cloudinary.com/xmt3m95n/image/upload/v1793115789/5406770781334741047_121.jpg" alt="WidGefter YouTube channel">
                         <div class="card-overlay"></div>
                         
@@ -338,11 +449,13 @@
         <!-- WRITING & COMMUNITY BÖLMƏSİ -->
         <section id="writing" class="py-20">
             <div class="max-w-[1040px] mx-auto px-6">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Writing and community</h2>
-                <p class="text-slate-400 text-lg mb-8">Where I share what I’m building.</p>
+                <div class="reveal-up">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Writing and community</h2>
+                    <p class="text-slate-400 text-lg mb-8">Where I share what I’m building.</p>
+                </div>
                 
                 <div class="space-y-3.5">
-                    <a href="https://dev.to/samirbekirli/hello-devto-im-building-mitfly-a-flight-search-and-comparison-platform-5d4m" target="_blank" rel="noopener" class="spotlight-card block p-6 rounded-2xl backdrop-blur-xl group">
+                    <a href="https://dev.to/samirbekirli/hello-devto-im-building-mitfly-a-flight-search-and-comparison-platform-5d4m" target="_blank" rel="noopener" class="spotlight-card block p-6 rounded-2xl backdrop-blur-xl group reveal-up delay-1">
                         <div class="relative z-10 flex items-center justify-between gap-4">
                             <div>
                                 <div class="text-lg font-semibold text-white group-hover:text-sky-400 transition">
@@ -354,7 +467,7 @@
                         </div>
                     </a>
 
-                    <a href="https://www.indiehackers.com/samirbekirli" target="_blank" rel="noopener" class="spotlight-card block p-6 rounded-2xl backdrop-blur-xl group">
+                    <a href="https://www.indiehackers.com/samirbekirli" target="_blank" rel="noopener" class="spotlight-card block p-6 rounded-2xl backdrop-blur-xl group reveal-up delay-2">
                         <div class="relative z-10 flex items-center justify-between gap-4">
                             <div>
                                 <div class="text-lg font-semibold text-white group-hover:text-sky-400 transition">
@@ -372,12 +485,14 @@
         <!-- Q&A (SUAL-CAVAB + YAZI MAKİNASI EFFEKTİ) -->
         <section id="qa" class="py-20 bg-white/[0.015] border-y border-white/[0.08]">
             <div class="max-w-[1040px] mx-auto px-6">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Frequently asked questions</h2>
-                <p class="text-slate-400 text-lg mb-9">Questions about my journey, projects, and how to collaborate.</p>
+                <div class="reveal-up">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Frequently asked questions</h2>
+                    <p class="text-slate-400 text-lg mb-9">Questions about my journey, projects, and how to collaborate.</p>
+                </div>
                 
                 <div class="flex flex-col gap-3.5">
                     
-                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl reveal-up delay-1">
                         <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
                             <span class="flex items-center">
                                 <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">1</span>
@@ -390,7 +505,7 @@
                         </div>
                     </div>
 
-                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl reveal-up delay-1">
                         <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
                             <span class="flex items-center">
                                 <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">2</span>
@@ -403,7 +518,7 @@
                         </div>
                     </div>
 
-                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl reveal-up delay-2">
                         <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
                             <span class="flex items-center">
                                 <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">3</span>
@@ -416,7 +531,7 @@
                         </div>
                     </div>
 
-                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl reveal-up delay-2">
                         <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
                             <span class="flex items-center">
                                 <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">4</span>
@@ -429,7 +544,7 @@
                         </div>
                     </div>
 
-                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl">
+                    <div class="qa-item spotlight-card rounded-[18px] backdrop-blur-xl reveal-up delay-3">
                         <button class="qa-btn relative z-10 w-full flex items-center justify-between p-5 sm:p-6 text-left font-semibold text-[17px] text-white cursor-pointer" aria-expanded="false">
                             <span class="flex items-center">
                                 <span class="w-7 h-7 rounded-lg bg-white/[0.06] border border-white/10 text-sky-400 text-xs font-bold inline-flex items-center justify-center mr-3.5 shrink-0">5</span>
@@ -463,16 +578,18 @@
         <!-- LINKS BÖLMƏSİ -->
         <section id="links" class="py-20">
             <div class="max-w-[1040px] mx-auto px-6">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Find me online</h2>
-                <p class="text-slate-400 text-lg mb-8">The best places to follow along.</p>
+                <div class="reveal-up">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Find me online</h2>
+                    <p class="text-slate-400 text-lg mb-8">The best places to follow along.</p>
+                </div>
                 
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://github.com/samirbekirli" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">GitHub ↗</a>
-                    <a href="https://www.linkedin.com/in/samirbekirli" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">LinkedIn ↗</a>
-                    <a href="https://www.youtube.com/@WidGefter" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">YouTube ↗</a>
-                    <a href="https://x.com/WidGefter" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">X ↗</a>
-                    <a href="https://dev.to/samirbekirli" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">dev.to ↗</a>
-                    <a href="https://www.indiehackers.com/samirbekirli" target="_blank" rel="noopener" class="px-6 py-3 rounded-full border border-white/15 bg-white/[0.06] hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)]">Indie Hackers ↗</a>
+                <div class="flex flex-wrap gap-3 reveal-up delay-1">
+                    <a href="https://github.com/samirbekirli" target="_blank" rel="noopener" class="resend-pill px-6 py-3 rounded-full text-white hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(56,189,248,0.3)]">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/samirbekirli" target="_blank" rel="noopener" class="resend-pill px-6 py-3 rounded-full text-white hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(56,189,248,0.3)]">LinkedIn ↗</a>
+                    <a href="https://www.youtube.com/@WidGefter" target="_blank" rel="noopener" class="resend-pill px-6 py-3 rounded-full text-white hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(56,189,248,0.3)]">YouTube ↗</a>
+                    <a href="https://x.com/WidGefter" target="_blank" rel="noopener" class="resend-pill px-6 py-3 rounded-full text-white hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(56,189,248,0.3)]">X ↗</a>
+                    <a href="https://dev.to/samirbekirli" target="_blank" rel="noopener" class="resend-pill px-6 py-3 rounded-full text-white hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(56,189,248,0.3)]">dev.to ↗</a>
+                    <a href="https://www.indiehackers.com/samirbekirli" target="_blank" rel="noopener" class="resend-pill px-6 py-3 rounded-full text-white hover:bg-white hover:text-[#04060a] font-semibold text-sm transition hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(56,189,248,0.3)]">Indie Hackers ↗</a>
                 </div>
             </div>
         </section>
@@ -486,36 +603,7 @@
         </div>
     </footer>
 
-    <!-- COMMAND PALETTE (Ctrl + K) -->
-    <div id="cmdModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-start justify-center pt-24 px-4">
-        <div class="w-full max-w-lg rounded-2xl bg-[#090d16] border border-white/15 shadow-2xl overflow-hidden">
-            <div class="flex items-center px-4 py-3 border-b border-white/10">
-                <i data-lucide="terminal" class="w-4 h-4 text-sky-400 mr-3"></i>
-                <span class="text-xs font-mono text-slate-400 flex-1">Quick Navigation & Actions</span>
-                <button onclick="toggleCmdModal()" class="text-xs font-mono text-slate-400 hover:text-white px-2 py-1 rounded bg-white/5">ESC</button>
-            </div>
-            <div class="p-2 text-xs font-mono text-slate-300 space-y-1">
-                <a href="https://getmitfly.github.io/" target="_blank" class="flex items-center justify-between px-3 py-2.5 rounded-lg hover:bg-sky-400/10 hover:text-sky-400 transition">
-                    <span>✈️ Open Mitfly Official Website</span>
-                    <span>↗</span>
-                </a>
-                <a href="mitfly.html" class="flex items-center justify-between px-3 py-2.5 rounded-lg hover:bg-sky-400/10 hover:text-sky-400 transition">
-                    <span>📄 View Mitfly Project Page</span>
-                    <span>→</span>
-                </a>
-                <a href="https://www.youtube.com/@WidGefter" target="_blank" class="flex items-center justify-between px-3 py-2.5 rounded-lg hover:bg-sky-400/10 hover:text-sky-400 transition">
-                    <span>▶️ Watch WidGefter on YouTube</span>
-                    <span>↗</span>
-                </a>
-                <button onclick="copyEmail(); toggleCmdModal();" class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg hover:bg-sky-400/10 hover:text-sky-400 transition text-left">
-                    <span>📧 Copy Email (samirbekirli2@gmail.com)</span>
-                    <span>Copy</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- JAVASCRIPT (Sənin Orijinal Skriptlərin + Yeni Effektlər) -->
+    <!-- JAVASCRIPT -->
     <script>
         lucide.createIcons();
 
@@ -591,21 +679,7 @@
             });
         });
 
-        // 4. Canlı Mitfly Qiymət Simulyatoru
-        const simRoutes = [
-            { r: 'GYD ✈ LHR', p: '$119' },
-            { r: 'JFK ✈ CDG', p: '$275' },
-            { r: 'DXB ✈ HND', p: '$390' },
-            { r: 'IST ✈ AMS', p: '$85' }
-        ];
-        let sIdx = 0;
-        setInterval(() => {
-            sIdx = (sIdx + 1) % simRoutes.length;
-            document.getElementById('liveRoute').textContent = simRoutes[sIdx].r;
-            document.getElementById('livePrice').textContent = simRoutes[sIdx].p;
-        }, 3000);
-
-        // 5. E-poçt Kopyalama və Ctrl+K Modal
+        // 4. E-poçt Kopyalama
         function copyEmail() {
             navigator.clipboard.writeText('samirbekirli2@gmail.com');
             const btn = document.getElementById('copyBtn');
@@ -614,16 +688,22 @@
                 setTimeout(() => btn.textContent = 'Copy Email', 2000);
             }
         }
-        function toggleCmdModal() {
-            document.getElementById('cmdModal').classList.toggle('hidden');
+
+        // 5. Peşəkar Scroll-Reveal (Səhifəni aşağı sürüşdürdükcə açılan elementlər)
+        if (!reduce && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+            document.querySelectorAll('.reveal-up').forEach(el => revealObserver.observe(el));
+        } else {
+            document.querySelectorAll('.reveal-up').forEach(el => el.classList.add('is-visible'));
         }
-        window.addEventListener('keydown', e => {
-            if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-                e.preventDefault();
-                toggleCmdModal();
-            }
-            if (e.key === 'Escape') document.getElementById('cmdModal').classList.add('hidden');
-        });
 
         // 6. Yüngül Uçuş Radarı Xətləri (Canvas)
         const canvas = document.getElementById('flightCanvas');
