@@ -1,4 +1,5 @@
 Hi I'm Samir Bekirli 👋
+
 💻 Developer | Founder of Mitfly | Creator of WidGefter
 
 I'm a developer passionate about building useful digital products, exploring artificial intelligence, and creating innovative technology.
