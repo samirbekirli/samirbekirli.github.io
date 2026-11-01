@@ -1,6 +1,4 @@
 Hi I'm Samir Bekirli 👋
-
-- Website: https://samirbekirli.github.io/
 💻 Developer | Founder of Mitfly | Creator of WidGefter
 
 I'm a developer passionate about building useful digital products, exploring artificial intelligence, and creating innovative technology.
@@ -20,7 +18,7 @@ I'm a developer passionate about building useful digital products, exploring art
 
 ## 🔗 Connect With Me
 
-- 🌐 [Website](https://samirbekirli.github.io)
+- 🌐 [Website](https://mitfly.site/)
 - 🎥 [YouTube: WidGefter](https://www.youtube.com/@WidGefter)
 - 💼 [LinkedIn](https://www.linkedin.com/in/samirbekirli)
 - 𝕏 [@WidGefter](https://x.com/WidGefter)
